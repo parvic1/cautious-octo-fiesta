@@ -1,0 +1,14 @@
+name: hello-world
+
+on: push
+
+jobs:
+  hello-world-jobs:
+
+    runs-on: unbutu-latest
+
+    steps:
+      - name: checkout out repository
+        uses: actions/checkout@v4
+      - run: echo "$(cat hello_world.txt)"
+      
